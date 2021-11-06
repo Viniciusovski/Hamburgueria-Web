@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: kaisg;
+    src: url('../font/KAISG.TTF');
+}
+
+nav {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    opacity: 95%;
+}
+
+header img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    font-size: 12px;
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/img1.png');
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+#centro {
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 3px;
+    background: none;
+}
+
+pre {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    opacity: 95%;
+    color: #fff;
+}
+
+#centro pre {
+    opacity: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 80px;
+    text-align: center;
+    color: #fff;
+    background-color:rgba(0,0,0, 0.85);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.logo {
+    opacity: 95%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.logo img {
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.menu {
+    font-family: kaisg;
+    opacity: 95%;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 55px;
+    background-color: #333;
+    font-family: 'Arial';
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul ul {
+    display: flex;
+    width: 200px;
+}
+
+.menu a {
+    font-family: kaisg;
+    font-size: 25px;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+    position: relative;
+    border-right: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu li a:hover {
+    background: #333;
+    color: #fff;
+    -moz-box-shadow: 0 3px 10px 0 #CCC;
+    box-shadow: 0 3px 10px 0 #ccc;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+.avatar {
+    width: fit-content;
+    position: relative;
+    margin-left: 45%;
+    margin-top: 50px;
+}
+
+.avatar-container {
+    border-radius: 50%;
+    border: 1px solid #dadce0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+#avatar-image {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.avatar-size {
+    width: 10rem;
+    height: 10rem;
+}
+
+.edit-container {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    background-color: rgba(32, 33, 36, 0.6);
+    bottom: 0;
+    height: 33%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.avatar-container:hover .edit-container {
+    opacity: 1;
+}
+
+#file {
+    display: none;
+}
+
+.dados {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    align-items: center;
+    display: center;
+    opacity: 95%;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    margin-left: 38%;
+}
+
+
+.dados p {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.dados [type=submit] {
+    width: 50%;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 95%;
+}
+
+.dados [type=submit]:hover {
+    background-color: #cf3030;
+}
+
